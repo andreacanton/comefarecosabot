@@ -27,6 +27,14 @@ bot.onText(/Come stai\?/i, function (msg) {
   });
 });
 
+
+//bot.onText(/we\?/i, function (msg) {
+// var name = msg.from.first_name;
+//  bot.sendVideo(video.chat.id,https://www.dropbox.com/s/qt7t31nhhl5z27u/video_2017-09-30_20-23-39.mp4).then(function () {
+    //reply sent!
+//  });
+//});
+
 // telegramBot.sendVideoNote da implementare
 // telegramBot.sendVideo per video più lunghi di 1 minuto
 
