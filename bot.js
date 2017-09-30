@@ -13,9 +13,16 @@ else {
 
 console.log('Bot server started in the ' + process.env.NODE_ENV + ' mode');
 
-bot.onText(/^/, function (msg) {
+bot.onText(/Ciao/, function (msg) {
   var name = msg.from.first_name;
-  bot.sendMessage(msg.chat.id, 'Hello, ' + name + '!').then(function () {
+  bot.sendMessage(msg.chat.id, 'Ciao, ' + name + '!').then(function () {
+    // reply sent!
+  });
+});
+
+bot.onText(/Come stai\?/, function (msg) {
+  var name = msg.from.first_name;
+  bot.sendMessage(msg.chat.id, 'Benino, ' + name + ' e tu?').then(function () {
     // reply sent!
   });
 });
